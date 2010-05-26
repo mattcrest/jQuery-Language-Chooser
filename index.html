@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Language test</title>
+
+<!-- JavaScript -->
+<script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+<script src="js/jquery.cookies.min.js" type="text/javascript"></script>
+<script src="js/jquery.language.js" type="text/javascript"></script>
+
+<!-- just a demo style to show the current language style -->
+<style type="text/css">
+.currentLanguage {
+	color: red;
+	font-weight: bold;
+}
+ol {
+	list-style-type: decimal;
+}
+</style>
+
+</head>
+<body>
+		<h1 class="english">English Title</h1>
+		<h1 class="espanol">Espa&ntilde;ol T&iacute;tulo</h1>
+	
+		<ul id="languageSelect">
+			<li><a href="#English" id="choose-english">English</a></li>
+			<li><a href="#Espanol" id="choose-espanol">Espa&ntilde;ol</a></li>
+		</ul>
+		
+		<h2 class="english">How does it work?</h2>
+		<p class="english">
+		Quite simply actually.</p>
+		<ol class="english">
+			<li>Create your language selector links/buttons</li>
+			<li>Set the id on those selectors to "choose-[language]" where [language] is english or espanol or any language name in lowercase: id="choose-english"</li>
+			<li>Add your content to the html in each language (remember, many images and other elements can be shared by all languages)</li>
+			<li>Give each element a class that is the same as the [language] you set for the selector: class="english" or class="espanol"</li>
+			<li>Adjust the variable settings the the language.jquery.js file as directed</li>
+		</ol>
+		
+		<h2 class="espanol">Comment ça marche?</h2>
+		<p class="espanol">
+			Muy simple en realidad.
+		</p>
+		<ol class="espanol">
+			<li>Cree sus vínculos selección de idiomas / botones </li>
+			<li>Configurar el ID de los selectores de "elegir-[idioma]" donde [idioma] es ingles o espanol o cualquier otro nombre de la lengua en minúscula: id="elegir-espanol" </li>
+			<li>Tu contenido al HTML en cada idioma (recuerde, muchas imágenes y otros elementos pueden ser compartidos por todos los idiomas)</li>
+			<li>Dé a cada elemento una clase que es lo mismo que el [idioma] ha establecido para la selección: class="ingles" o class="espanol" </li>
+			<li>Ajuste los valores de la variable de language.jquery.js el archivo como se indica </li>
+		</ol>
+</body>
+</html>
